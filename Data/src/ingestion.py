@@ -36,7 +36,6 @@ def build_novel_rows():
 
 def build_novel_table():
     rows = build_novel_rows()
-    # Define the schema/column names
     table = pw.debug.table_from_rows(
         schema=pw.schema_builder({
             "book": pw.column_definition(dtype=str),
